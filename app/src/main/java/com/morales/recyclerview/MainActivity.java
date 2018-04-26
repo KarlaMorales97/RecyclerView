@@ -4,10 +4,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+
+    Button buttonVer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         adapter = new SeriesAdapter(series);
         rv.setAdapter(adapter);
 
+
+
     }
 
     RecyclerView rv;
@@ -37,5 +44,12 @@ public class MainActivity extends AppCompatActivity {
         series.add(new Serie("Big Hero 6", "13", R.drawable.bi6, "Big Hero 6 created by Disney"));
         series.add(new Serie("Monster inc", "13", R.drawable.mn, "Monster inc created by Disney"));
         series.add(new Serie("Spider Man", "13", R.drawable.spider, "Spider Man amazing movie"));
+
+
+
+
     }
+
+
+
 }
